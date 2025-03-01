@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Farmer</title>
+    
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- External JavaScript -->
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -21,7 +25,18 @@
     <section id="dashboard">
         <h2>Welcome to Smart Farmer</h2>
         <p>Stay updated with the latest farming news, weather updates, and crop information.</p>
-        <div id="news-container">Loading latest news...</div>
+
+        <!-- Weather Widget -->
+        <div id="weather-widget">
+            <h3>Current Weather</h3>
+            <p id="weather-data">Fetching weather...</p>
+        </div>
+
+        <!-- Farming News Section -->
+        <div id="news-container">
+            <h3>Latest Farming News</h3>
+            <ul id="news-list">Loading latest news...</ul>
+        </div>
     </section>
     
     <footer>
