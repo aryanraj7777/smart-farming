@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crop Guide</title>
+    
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- External JavaScript -->
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -20,79 +24,87 @@
     
     <section id="crop-guide">
         <h2>Crop Information</h2>
-        <table>
-            <tr>
-                <th>Crop</th>
-                <th>Sunlight (hours/day)</th>
-                <th>Water (mm/week)</th>
-                <th>Temperature (°C)</th>
-                <th>Growth Time (days)</th>
-                <th>Additional Nutrients</th>
-            </tr>
-            <tr>
-                <td>Gram</td>
-                <td>7</td>
-                <td>33</td>
-                <td>25</td>
-                <td>90-110</td>
-                <td>Phosphorus; Potassium</td>
-            </tr>
-            <tr>
-                <td>Corn</td>
-                <td>9</td>
-                <td>42</td>
-                <td>26</td>
-                <td>100-130</td>
-                <td>Nitrogen; Phosphorus; Potassium</td>
-            </tr>
-            <tr>
-                <td>Potato</td>
-                <td>7</td>
-                <td>38</td>
-                <td>20</td>
-                <td>90-120</td>
-                <td>Potassium; Nitrogen</td>
-            </tr>
-            <tr>
-                <td>Onion</td>
-                <td>9</td>
-                <td>30</td>
-                <td>20</td>
-                <td>90-150</td>
-                <td>Phosphorus; Potassium</td>
-            </tr>
-            <tr>
-                <td>Tomato</td>
-                <td>9</td>
-                <td>50</td>
-                <td>25</td>
-                <td>90-120</td>
-                <td>Nitrogen; Phosphorus; Potassium; Calcium</td>
-            </tr>
-            <tr>
-                <td>Cucumber</td>
-                <td>9</td>
-                <td>50</td>
-                <td>22</td>
-                <td>50-70</td>
-                <td>Nitrogen; Potassium</td>
-            </tr>
-            <tr>
-                <td>Lettuce</td>
-                <td>6</td>
-                <td>25</td>
-                <td>15</td>
-                <td>30-45</td>
-                <td>Balanced N, P, K (Nitrogen emphasis)</td>
-            </tr>
-            <tr>
-                <td>Bell Pepper</td>
-                <td>9</td>
-                <td>35</td>
-                <td>25</td>
-                <td>70-90</td>
-                <td>Nitrogen; Phosphorus; Potassium</td>
-            </tr>
+
+        <!-- Search Bar for Filtering Crops -->
+        <input type="text" id="searchBar" placeholder="Search for a crop..." onkeyup="filterCrops()">
+
+        <table id="cropTable">
+            <thead>
+                <tr>
+                    <th>Crop</th>
+                    <th>Sunlight (hours/day)</th>
+                    <th>Water (mm/week)</th>
+                    <th>Temperature (°C)</th>
+                    <th>Growth Time (days)</th>
+                    <th>Additional Nutrients</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gram</td>
+                    <td>7</td>
+                    <td>33</td>
+                    <td>25</td>
+                    <td>90-110</td>
+                    <td>Phosphorus; Potassium</td>
+                </tr>
+                <tr>
+                    <td>Corn</td>
+                    <td>9</td>
+                    <td>42</td>
+                    <td>26</td>
+                    <td>100-130</td>
+                    <td>Nitrogen; Phosphorus; Potassium</td>
+                </tr>
+                <tr>
+                    <td>Potato</td>
+                    <td>7</td>
+                    <td>38</td>
+                    <td>20</td>
+                    <td>90-120</td>
+                    <td>Potassium; Nitrogen</td>
+                </tr>
+                <tr>
+                    <td>Onion</td>
+                    <td>9</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>90-150</td>
+                    <td>Phosphorus; Potassium</td>
+                </tr>
+                <tr>
+                    <td>Tomato</td>
+                    <td>9</td>
+                    <td>50</td>
+                    <td>25</td>
+                    <td>90-120</td>
+                    <td>Nitrogen; Phosphorus; Potassium; Calcium</td>
+                </tr>
+                <tr>
+                    <td>Cucumber</td>
+                    <td>9</td>
+                    <td>50</td>
+                    <td>22</td>
+                    <td>50-70</td>
+                    <td>Nitrogen; Potassium</td>
+                </tr>
+                <tr>
+                    <td>Lettuce</td>
+                    <td>6</td>
+                    <td>25</td>
+                    <td>15</td>
+                    <td>30-45</td>
+                    <td>Balanced N, P, K (Nitrogen emphasis)</td>
+                </tr>
+                <tr>
+                    <td>Bell Pepper</td>
+                    <td>9</td>
+                    <td>35</td>
+                    <td>25</td>
+                    <td>70-90</td>
+                    <td>Nitrogen; Phosphorus; Potassium</td>
+                </tr>
+            </tbody>
         </table>
     </section>
     
@@ -101,3 +113,4 @@
     </footer>
 </body>
 </html>
+
