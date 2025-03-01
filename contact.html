@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    
+    <!-- Link to External CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Link to External JavaScript -->
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -20,12 +24,13 @@
     
     <section id="contact">
         <h2>Get in Touch</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
             <button type="submit">Submit</button>
         </form>
+        <p id="formMessage"></p>
     </section>
     
     <footer>
@@ -33,3 +38,4 @@
     </footer>
 </body>
 </html>
+
